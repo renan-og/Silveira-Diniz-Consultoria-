@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background: url(./Imagem/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.logo-container {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0.3);
+  mask-image: linear-gradient(to right, transparent, black 70%, black 90%, transparent) */
+}
+
+nav {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Fontes a considerar: Lucida, Impact, Veredana,   */
+    font-size: 21px;
+    font-weight: 800;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    padding: 15px;
+    width: 100%;
+}
+
+/* nav img{
+    width: 50px;
+} */
+
+nav button {
+    background-color: #04D94F;
+    box-sizing: border-box;
+    color: #010440;
+    border-radius: 20px;
+    border-style: none;
+    width: 190px;
+    height: 40px;
+    font-size: 21px;
+    font-weight: 800;
+    transition: transform 0.3s ease;
+}
+
+nav button:hover {
+    /* border-radius: 25px;
+    width: 200px;
+    height: 50px; */
+    transform: scale(1.17);
+    cursor: pointer;
+}
