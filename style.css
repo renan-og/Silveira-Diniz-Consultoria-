@@ -17,15 +17,31 @@ body {
     background-repeat: no-repeat;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
 .logo-container {
     display: flex;
     box-sizing: border-box;
-    justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 120px;
     width: 100%;
+    /* padding-left: 10px; */
     /* background-color: rgba(255, 255, 255, 0.3);
-  mask-image: linear-gradient(to right, transparent, black 70%, black 90%, transparent) */
+    mask-image: linear-gradient(to right, transparent, black 70%, black 90%, transparent) */
+}
+
+#logoBox {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    justify-self: start;
+    left: 0px;
 }
 
 nav {
@@ -34,20 +50,42 @@ nav {
     font-size: 21px;
     font-weight: 800;
     z-index: 3;
+    align-self: center;
     display: flex;
     align-items: center;
     box-sizing: border-box;
     gap: 70px;
     flex-wrap: wrap;
     justify-content: center;
-    position: fixed;
     padding: 15px;
-    width: 100%;
+    width: 60%;
 }
 
-/* nav img{
-    width: 50px;
-} */
+
+.link-centro {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.link-centro::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.link-centro:hover::after {
+    transform: scaleX(1);
+}
+
 
 nav button {
     background-color: #04D94F;
@@ -68,4 +106,51 @@ nav button:hover {
     height: 50px; */
     transform: scale(1.17);
     cursor: pointer;
+}
+
+#headline {
+    color: white;
+    box-sizing: border-box;
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 80%;
+    width: 70%;
+}
+
+#headline h1 {
+    font-size: 65px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 45%;
+    display: block;
+    transform-origin: top;
+    transform: scaleY(2.0);
+    line-height: 0.8;
+    font-weight: 300;
+}
+
+mark {
+    background: linear-gradient(to right, #03A696, #04D94F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#CTA {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    border-radius: 20px;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#CTA form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 90%;
+    border: 1px solid white;
 }

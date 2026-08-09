@@ -10,18 +10,38 @@
 </head>
 
 <body>
-    <header class="logo-container">
-        <nav>
-            <img src="Imagem/logoSimbolo.jpeg" alt="" width="200px">
-            <a href="#sobre">Quem somos</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#clientes">Clientes</a>
-            <a href="#orcamento-personalizado">Orçamento</a>
-            <button>Contate-nos</button>
-        </nav>
+    <header>
+        <div class="logo-container">
+            <div id="logoBox"><img src="Imagem/logoSimbolo-removebg-preview.png" alt="" width="100px"></div>
+            <nav>
+                <a class="link-centro" href="#sobre">Quem somos</a>
+                <a class="link-centro" href="#servicos">Serviços</a>
+                <a class="link-centro" href="#clientes">Clientes</a>
+            </nav>
+        </div>
+        <div id="headline">
+            <h1>Gestão completa em Segurança do trabalho e Meio Ambiente para a sua empresa <mark>prosperar.</mark></h1>
+            <section id="CTA">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="919f6711-3a4b-4fb9-a926-2d7bae306389">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </section>
+        </div>
     </header>
 
-    <main></main>
+    <main>
+        <section id="sobre"></section>
+        <section id="avaliacoes"></section>
+    </main>
 
     <footer></footer>
 </body>
