@@ -145,7 +145,16 @@ mark {
     align-items: center;
     border-radius: 20px;
     height: 70%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background: radial-gradient(
+        ellipse at center,
+        rgba(255, 255, 255, 0.20) 0%,   
+        rgba(255, 255, 255, 0.30) 70%,  
+        rgba(255, 255, 255, 0.50) 100%  
+  );
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
 }
 
 #CTA form {
@@ -155,5 +164,36 @@ mark {
     flex-wrap: wrap;
     width: 80%;
     height: 90%;
-    border: 1px solid white;
 }
+#CTA form input {
+    width: 400px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+}
+form label{
+    text-align: left;
+    width: 90%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+form button {
+    
+}
+textarea{
+    box-sizing: border-box;
+    width: 400px;
+    height: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.input{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
