@@ -109,6 +109,9 @@ nav button:hover {
 }
 
 #headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: white;
     box-sizing: border-box;
     padding: 16px;
@@ -122,7 +125,7 @@ nav button:hover {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 45%;
     display: block;
-    transform-origin: top;
+    transform-origin: center;
     transform: scaleY(2.0);
     line-height: 0.8;
     font-weight: 300;
